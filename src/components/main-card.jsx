@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SearchCard from "./search-card";
+import Timer from "./timer";
 
 MainCard.propTypes = {
 
@@ -16,11 +17,7 @@ function MainCard(props) {
             <div className='main-card-row-2'>
                 <h3>Fornite New Season</h3>
                 <h4>Join Live Stream</h4>
-                <div className='timer'>
-                    <span>11</span>
-                    <span>:</span>
-                    <span>15</span>
-                </div>
+                <Timer />
                 {/* <div className='game-player-image'>
                     <img src="/image-1.png" />
                 </div> */}
