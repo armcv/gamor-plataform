@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import SearchCard from "./search-card";
 import Timer from "./timer";
+import PlatformChooser from "./platform-chooser";
 
 MainCard.propTypes = {
 
@@ -24,11 +25,7 @@ function MainCard(props) {
             </div>
             <div className='main-card-row-3'>
                 <div>01. <span>Choose Platform</span></div>
-                <div className="toggle-btn-group">
-                    <button className="toggle-btn selected" type="button">Party</button>
-                    <button className="toggle-btn" type="button">Matchs</button>
-                    <button className="toggle-btn" type="button">Streams</button>
-                </div>
+                <PlatformChooser />
                 <div>02. <span>Searching Game</span></div>
                 <SearchCard />
             </div>
