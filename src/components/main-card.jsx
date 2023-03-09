@@ -17,7 +17,7 @@ function MainCard(props) {
             </div>
             <div className='main-card-row-2'>
                 <h3>Fornite New Season</h3>
-                <h4>Join Live Stream</h4>
+                <a className='join-link'>Join Live Stream</a>
                 <Timer />
                 {/* <div className='game-player-image'>
                     <img src="/image-1.png" />
