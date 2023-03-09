@@ -52,9 +52,8 @@
 
 .main-card {
   width: 100%;
-  /* height: 90%; */
   border-radius: 24px;
-  background-color: #f4f5f8;
+  background-color: #21262e;
   display: flex;
   justify-content: space-around;
 }
@@ -74,7 +73,7 @@
 .main-card-row-2 {
   display: flex;
   flex-direction: column;
-  background-color: #781fe6;
+  background-color: #f38148;
   text-align: center;
   align-items: center;
   width: 33%;
@@ -121,8 +120,7 @@
   gap: 1.5em;
   padding: 1em;
   border-radius: 8px;
-  background-color: #f4f5f8;
-  box-shadow: 1px 1px 1px #cbc9cd5e;
+  background-color: #21262e;
 }
 
 .games-category-card img {
@@ -135,10 +133,8 @@
 }
 
 .search-card {
-  background-color: #f8f9fc;
+  background-color: #292b30;
   border-radius: 8px;
-  /* border: 1px solid #cbc9cdd1; */
-  box-shadow: 1px 1px 1px #cbc9cd5e;
   height: 100%;
   margin: 1em 1em 1em 0;
 }
@@ -161,7 +157,7 @@
   margin: 1em;
   border: none;
   cursor: pointer;
-
+  background-color: inherit;
 }
 
 .card-body {
@@ -173,8 +169,8 @@
   height: 48px;
   border: none;
   text-align: center;
-  background-color: #12151c;
-  color: white;
+  background-color: #ffffff;
+  color: #292b30;
   font-size: large;
   font-weight: bold;
   border-radius: 4px;
@@ -261,26 +257,21 @@
   width: 22px;
 }
 
-/* .avatar-group:not(:first-child) {
-  margin-left: -14px;
-  -webkit-mask:radial-gradient(circle 12px at 2px 50%,transparent 99%,#fff 100%);
-          mask:radial-gradient(circle 12px at 2px 50%,transparent 99%,#fff 100%);
-}  */
-
 .toggle-btn-group {
   margin: 1em 1em 1em 0;
-  background-color: #f8f9fc;
+  background-color: #1a1f27;
   border-radius: 24px;
-  box-shadow: 1px 1px 1px #cbc9cd5e;
   display: flex;
   justify-content: space-around;
 }
 
 .toggle-btn {
   margin: 1em;
+  font-weight: bold;
   width: calc(30% - 8px);
   border: none;
   cursor: pointer;
+  background-color: inherit;
 }
 
 .toggle-btn.selected {
@@ -292,15 +283,16 @@
 .timer {
   display: flex;
   justify-content: space-around;
-  /* width: fit-content; */
   background-color: #f8f9fc;
   border-radius: 48px;
   padding: 8px 24px 8px 24px;
   font-size: 24px;
   font-weight: bolder;
-  color: #5c14b4;
+  /* color: #5c14b4; */
+  color: #fb8e54;
 }
 
 .timer span {
   margin: 4px;
 }
+

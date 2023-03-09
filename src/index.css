@@ -26,4 +26,36 @@
   button {
     background-color: #f9f9f9;
   }
+  .main-card {
+    background-color: #f4f5f8;
+  }
+
+  .main-card-row-2 {
+    background-color: #781fe6;
+  }
+
+  .games-category-card {
+    background-color: #f4f5f8;
+    box-shadow: 1px 1px 1px #cbc9cd5e;
+  }
+
+  .search-card {
+    background-color: #f8f9fc;
+    box-shadow: 1px 1px 1px #cbc9cd5e;
+  }
+
+  .search-button {
+    background-color: #12151c;
+    color: white;
+  }
+
+  .toggle-btn-group {
+    background-color: #f8f9fc;
+    box-shadow: 1px 1px 1px #cbc9cd5e;
+  }
+
+  .timer {
+    color: #5c14b4;
+  }
 }
+
