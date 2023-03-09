@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PlayIcon from "../assets/player-play-filled.svg";
+import { gameCategories as categories } from "../data/game-categories";
 
 GamesCategoryGallery.propTypes = {
 
@@ -11,18 +12,20 @@ function GamesCategoryGallery(props) {
         <div>
             <h3>Trending Categories</h3>
             <div className="games-category-wrapper">
+                {
+                    categories.map(({ category, id }) => (
+                        <div className="games-category-card">
+                            <span>/{id}</span>
+                            <span className='category-label'>{category} Games</span>
+                            <img src={PlayIcon} alt="" />
+                        </div>
+                    ))
+                }
                 <div className="games-category-card">
-                    <span>/01</span>
-                    <span className='category-label'>Sport Games</span>
+                    <span>VIEW ALL</span>
+                    <span className='category-label'>All Categories</span>
                     <img src={PlayIcon} alt="" />
                 </div>
-                <div className="games-category-card">02</div>
-                <div className="games-category-card">03</div>
-                <div className="games-category-card">04</div>
-                <div className="games-category-card">05</div>
-                <div className="games-category-card">06</div>
-                <div className="games-category-card">07</div>
-                <div className="games-category-card">08</div>
             </div>
 
         </div>
