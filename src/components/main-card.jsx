@@ -4,6 +4,9 @@ import SearchCard from "./search-card";
 import Timer from "./timer";
 import PlatformChooser from "./platform-chooser";
 
+import SigninButton from './signin-button';
+import SignupButton from './signup-button';
+
 MainCard.propTypes = {
 
 };
@@ -14,9 +17,13 @@ function MainCard(props) {
             <div className='main-card-row-1'>
                 <span className='slogan'>start streaming games differently</span>
                 <span>gamor now has stream party platform</span>
+                <div className='sign-group' style={{margin: "16px 0 16px "}}>
+                    <SignupButton />
+                    <SigninButton />
+                </div>
             </div>
             <div className='main-card-row-2'>
-                <h3>Fornite New Season</h3>
+                <span className='season-notice'>Fornite New Season</span>
                 <a className='join-link'>Join Live Stream</a>
                 <Timer />
                 {/* <div className='game-player-image'>
