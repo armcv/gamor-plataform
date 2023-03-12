@@ -15,7 +15,7 @@ function MainCard(props) {
     return (
         <div className='main-card'>
             <div className='main-card-row-1'>
-                <span className='slogan'>start streaming games differently</span>
+                <span className='slogan'>start <span className='slogan-force'>streaming</span> games differently</span>
                 <span>gamor now has stream party platform</span>
                 <div className='sign-group' style={{margin: "16px 0 16px "}}>
                     <SignupButton />
