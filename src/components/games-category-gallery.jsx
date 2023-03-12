@@ -14,7 +14,7 @@ function GamesCategoryGallery(props) {
             <div className="games-category-wrapper">
                 {
                     categories.map(({ category, id }) => (
-                        <div className="games-category-card">
+                        <div className="games-category-card" key={id}>
                             <span>/{id}</span>
                             <span className='category-label'>{category} Games</span>
                             <img src={PlayIcon} alt="" />
