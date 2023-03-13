@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import './toggle-switch.css';
 
 const ToggleSwitch = ({ id, name, checked, onChange, optionLabels, small, disabled }) => {
   function handleKeyPress(e){
