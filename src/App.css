@@ -2,6 +2,11 @@
   padding: 6rem;
 }
 
+.brand-name {
+  font-size: 36px;
+  font-weight: 800;
+}
+
 .sign-group {
   display: flex;
   flex-direction: row;
@@ -25,23 +30,24 @@
   border: none;
   color: white;
   border-radius: 24px;
+  font-weight: 600;
   padding: 15px;
   text-align: center;
   text-decoration: none;
-  /* display: inline-block; */
-  /* font-size: 16px; */
-  /* margin: 4px 2px;  */
   cursor: pointer;
 }
 
 .sign-in {
+  font-size: small ;
+  font-weight: 600;
+  color: var(--font-color);
   margin-right: 16px;
   text-decoration: none;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 4rem;
 }
@@ -95,6 +101,21 @@
   text-align: center;
   align-items: center;
   width: 33%;
+}
+
+.season-notice {
+  color: white;
+  margin-top: 1em;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.join-link {
+  margin-bottom: 1em;
+  font-weight: bold;
+  color: var(--join-link-color);
+  cursor: pointer;
+
 }
 
 .main-card-row-2 h3 {
@@ -189,9 +210,9 @@
   height: 48px;
   border: none;
   text-align: center;
-  background-color: var(--bg-color-4);
-  color: var(--font-color);
-  font-size: large;
+  background-color: var(--font-color);
+  color: var(--bg-color-3);
+  font-size: medium;
   font-weight: bold;
   border-radius: 4px;
 }
@@ -288,6 +309,7 @@
 
 .toggle-btn {
   margin: 1em;
+  color: var(--font-color);
   font-weight: bold;
   width: calc(30% - 8px);
   border: none;

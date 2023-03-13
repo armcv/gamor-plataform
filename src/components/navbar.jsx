@@ -15,7 +15,7 @@ function Navbar(props) {
 
     return (
         <nav className="navbar">
-            <div>
+            <div className='navbar-routes'>
                 {routes.map(({ name }) => (
                     <a className="navbar-route" key={name}>
                         {name}
@@ -23,7 +23,7 @@ function Navbar(props) {
                 ))}
 
             </div>
-            <span>Gamor</span>
+            <span className='brand-name'>Gamor</span>
             <div className='sign-group'>
                 <NavLink to={'/sign-in'} className='sign-in'>Sign In</NavLink>
                 <button>Create Account</button>
