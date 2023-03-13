@@ -30,6 +30,7 @@
   --bg-color-3: #292b30;
   --bg-color-4: #12151c;
   --shadow-color: none;
+  --join-link-color: orangered;
 }
 
 
@@ -43,6 +44,7 @@
     --bg-color-3: #f8f9fc;
     --bg-color-4: #12151c;
     --shadow-color: #cbc9cd5e;
+    --join-link-color: navy;
   }
 
   a:hover {
