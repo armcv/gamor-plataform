@@ -1,5 +1,6 @@
 import React from 'react';
 import { navbarRoutes as routes } from '../data/navbar-routes';
+import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import ToggleSwitch from './toggle-switch';
 function Navbar(props) {
@@ -24,7 +25,8 @@ function Navbar(props) {
             </div>
             <span>Gamor</span>
             <div className='sign-group'>
-                <a className='sign-in'>Sign In</a>
+                <NavLink to={'/sign-in'} className='sign-in'>Sign In</NavLink>
+                <button>Create Account</button>
             </div>
             <ToggleSwitch id="switch"
                 checked={checked}

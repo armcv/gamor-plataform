@@ -1,17 +1,17 @@
-import Navbar from "./components/navbar";
-import MainCard from "./components/main-card";
-import GamesCategoryGallery from "./components/games-category-gallery";
+import { Routes, Route, Navigate } from 'react-router-dom';
+import Main from './layout/main';
+import SignInForm from './components/sign-in-form';
+import SignIn from './layout/sign-in';
 
-import './App.css'
 
 function App() {
 
   return (
-    <div className="App">
-      <Navbar />
-      <MainCard />
-      <GamesCategoryGallery />
-    </div>
+    <Routes>
+      <Route path="/main/*" element={<Main />} />
+      <Route path="/sign-in" element={<SignIn />} />
+      <Route path="*" element={<Navigate to="/main/home" replace />} />
+    </Routes>
   )
 }
 
